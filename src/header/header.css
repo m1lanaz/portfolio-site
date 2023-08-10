@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EFE5DC;
+}
+
+.header{
+    background-color: #EFE5DC;
+    font-family: Anton;
+    color: black;
+    height: 100vh;
+}
+
+.navbar__background{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navbar__background h2{
+    justify-content: left;
+    padding: 10px 0px 10px 0px;
+    font-size: 2rem;
+}
+
+.navbar__background span{
+    width: 20px;
+}
+
+/* The header section */
+
+.headerBody__background{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.headerBody__words{
+    margin-left: -70px;
+}
+
+.headerBody__words h1{
+    font-size: 8.5rem;
+    line-height: 70px;
+    margin-top: 30px;
+}
+
+.headerBody__words h2{
+    font-size: 7.5rem;
+    line-height: 110px;
+    margin-top: 40px;
+
+}
+
+.headerBody__words h4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.headerBody__words p{
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+.headerBody__cvDownload{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.headerBody__circle{
+    border: 2px solid black;
+    border-radius: 70px;
+    margin-left: 15px;
+    color: #EFE5DC;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.headerBody__cvDownload span{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+.headerBody__background img{
+    width:800px;
+    rotate: -20deg;
+    margin-left: -30px;
+}
