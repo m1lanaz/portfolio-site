@@ -3,7 +3,7 @@ import { Download } from "react-bootstrap-icons"
 export default function HeaderBody(){
     return(
         <div className="headerBody__background">
-            <div>
+            <div className="headerBody__imgDiv">
                 <img src="./pic.png" />
             </div>
             <div className="headerBody__words">
