@@ -13,6 +13,19 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    fontFamily: {
+      abc: ["Lobster", "cursive"]
+    }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-typewriter')({
+      wordsets: {
+        forHeader: {
+          words: ['full-stack-developer'],
+          repeat: -1,
+          eraseSpeed: 0.1
+        }
+      }
+    })
+  ],
 }
