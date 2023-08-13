@@ -5,12 +5,20 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { BsDownload, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 
 export default function Intro() {
 
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
-    <section className='hero text-white py-28 sm:mb-0 scroll-mt-[100rem]' >
+    <section
+    ref={ref}
+    id="home" 
+    className='hero text-white py-28 sm:mb-0 scroll-mt-[100rem]' >
       <div className='container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
         <motion.h4 initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} className='text-2xl font-bold text-gray-950 lg:leading-[94px] lg:text-[38px]'>Hello, I'm Milana Zaborovska, an aspiring</motion.h4>
         <motion.h1 initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} className='text-5xl mt-3 font-bold lg:text-[88px] lg:leading-[94px] text-gray-950'><span className="type-forHeader"></span>
